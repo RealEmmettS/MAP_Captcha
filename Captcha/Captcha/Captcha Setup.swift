@@ -8,9 +8,10 @@
 import Foundation
 import UIKit
 
-struct captcha{
+struct captcha:Equatable {
     let code:String
-    let image:UIImage
+    let image:UIImage?
+    var placement:Int? = nil
 }
 
 //MARK: Making CAPTCHAs

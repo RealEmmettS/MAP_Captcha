@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1336E3A27B16C2100E99144 /* scratched_rv6te.wav in Resources */ = {isa = PBXBuildFile; fileRef = D1336E3127B16C2100E99144 /* scratched_rv6te.wav */; };
+		D1336E3B27B16C2100E99144 /* cassette_t6phm.wav in Resources */ = {isa = PBXBuildFile; fileRef = D1336E3227B16C2100E99144 /* cassette_t6phm.wav */; };
+		D1336E3C27B16C2100E99144 /* helicopter_nt6v5.wav in Resources */ = {isa = PBXBuildFile; fileRef = D1336E3327B16C2100E99144 /* helicopter_nt6v5.wav */; };
+		D1336E3D27B16C2100E99144 /* robot_cgy3e.wav in Resources */ = {isa = PBXBuildFile; fileRef = D1336E3427B16C2100E99144 /* robot_cgy3e.wav */; };
+		D1336E3E27B16C2100E99144 /* alien_cku3k.wav in Resources */ = {isa = PBXBuildFile; fileRef = D1336E3527B16C2100E99144 /* alien_cku3k.wav */; };
+		D1336E3F27B16C2100E99144 /* magic_x6tj8.wav in Resources */ = {isa = PBXBuildFile; fileRef = D1336E3627B16C2100E99144 /* magic_x6tj8.wav */; };
+		D1336E4027B16C2100E99144 /* ocean_8cd65.wav in Resources */ = {isa = PBXBuildFile; fileRef = D1336E3727B16C2100E99144 /* ocean_8cd65.wav */; };
+		D1336E4127B16C2100E99144 /* chord_e6jv9.wav in Resources */ = {isa = PBXBuildFile; fileRef = D1336E3827B16C2100E99144 /* chord_e6jv9.wav */; };
+		D1336E4227B16C2100E99144 /* electricity_bp5k6.wav in Resources */ = {isa = PBXBuildFile; fileRef = D1336E3927B16C2100E99144 /* electricity_bp5k6.wav */; };
+		D1468F4F27B420EA00377AC2 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1468F4E27B420EA00377AC2 /* AudioViewController.swift */; };
 		D1D3531A27A44A0E00ED6AA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D3531927A44A0E00ED6AA1 /* AppDelegate.swift */; };
 		D1D3531C27A44A0E00ED6AA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D3531B27A44A0E00ED6AA1 /* SceneDelegate.swift */; };
 		D1D3531E27A44A0E00ED6AA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D3531D27A44A0E00ED6AA1 /* ViewController.swift */; };
@@ -38,6 +48,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D1336E3127B16C2100E99144 /* scratched_rv6te.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = scratched_rv6te.wav; sourceTree = "<group>"; };
+		D1336E3227B16C2100E99144 /* cassette_t6phm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cassette_t6phm.wav; sourceTree = "<group>"; };
+		D1336E3327B16C2100E99144 /* helicopter_nt6v5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = helicopter_nt6v5.wav; sourceTree = "<group>"; };
+		D1336E3427B16C2100E99144 /* robot_cgy3e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = robot_cgy3e.wav; sourceTree = "<group>"; };
+		D1336E3527B16C2100E99144 /* alien_cku3k.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alien_cku3k.wav; sourceTree = "<group>"; };
+		D1336E3627B16C2100E99144 /* magic_x6tj8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = magic_x6tj8.wav; sourceTree = "<group>"; };
+		D1336E3727B16C2100E99144 /* ocean_8cd65.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ocean_8cd65.wav; sourceTree = "<group>"; };
+		D1336E3827B16C2100E99144 /* chord_e6jv9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chord_e6jv9.wav; sourceTree = "<group>"; };
+		D1336E3927B16C2100E99144 /* electricity_bp5k6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = electricity_bp5k6.wav; sourceTree = "<group>"; };
+		D1468F4E27B420EA00377AC2 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
 		D1D3531627A44A0E00ED6AA1 /* Captcha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Captcha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D3531927A44A0E00ED6AA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1D3531B27A44A0E00ED6AA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +100,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1336E3027B16C2100E99144 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D1336E3127B16C2100E99144 /* scratched_rv6te.wav */,
+				D1336E3227B16C2100E99144 /* cassette_t6phm.wav */,
+				D1336E3327B16C2100E99144 /* helicopter_nt6v5.wav */,
+				D1336E3427B16C2100E99144 /* robot_cgy3e.wav */,
+				D1336E3527B16C2100E99144 /* alien_cku3k.wav */,
+				D1336E3627B16C2100E99144 /* magic_x6tj8.wav */,
+				D1336E3727B16C2100E99144 /* ocean_8cd65.wav */,
+				D1336E3827B16C2100E99144 /* chord_e6jv9.wav */,
+				D1336E3927B16C2100E99144 /* electricity_bp5k6.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		D1D3530D27A44A0E00ED6AA1 = {
 			isa = PBXGroup;
 			children = (
@@ -107,7 +143,9 @@
 				D1D3531B27A44A0E00ED6AA1 /* SceneDelegate.swift */,
 				D1D3531D27A44A0E00ED6AA1 /* ViewController.swift */,
 				D1D3534B27A44C6E00ED6AA1 /* Captcha Setup.swift */,
+				D1468F4E27B420EA00377AC2 /* AudioViewController.swift */,
 				D1D3534927A44A2600ED6AA1 /* Extensions.swift */,
+				D1336E3027B16C2100E99144 /* Sounds */,
 				D1D3531F27A44A0E00ED6AA1 /* Main.storyboard */,
 				D1D3532227A44A0F00ED6AA1 /* Assets.xcassets */,
 				D1D3532427A44A0F00ED6AA1 /* LaunchScreen.storyboard */,
@@ -237,8 +275,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1336E3F27B16C2100E99144 /* magic_x6tj8.wav in Resources */,
 				D1D3532627A44A0F00ED6AA1 /* LaunchScreen.storyboard in Resources */,
+				D1336E4127B16C2100E99144 /* chord_e6jv9.wav in Resources */,
+				D1336E3B27B16C2100E99144 /* cassette_t6phm.wav in Resources */,
+				D1336E3D27B16C2100E99144 /* robot_cgy3e.wav in Resources */,
 				D1D3532327A44A0F00ED6AA1 /* Assets.xcassets in Resources */,
+				D1336E3E27B16C2100E99144 /* alien_cku3k.wav in Resources */,
+				D1336E4027B16C2100E99144 /* ocean_8cd65.wav in Resources */,
+				D1336E3C27B16C2100E99144 /* helicopter_nt6v5.wav in Resources */,
+				D1336E4227B16C2100E99144 /* electricity_bp5k6.wav in Resources */,
+				D1336E3A27B16C2100E99144 /* scratched_rv6te.wav in Resources */,
 				D1D3532127A44A0E00ED6AA1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +316,7 @@
 				D1D3531C27A44A0E00ED6AA1 /* SceneDelegate.swift in Sources */,
 				D1D3534A27A44A2600ED6AA1 /* Extensions.swift in Sources */,
 				D1D3534C27A44C6E00ED6AA1 /* Captcha Setup.swift in Sources */,
+				D1468F4F27B420EA00377AC2 /* AudioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
