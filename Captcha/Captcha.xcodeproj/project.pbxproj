@@ -100,7 +100,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D1336E3027B16C2100E99144 /* Sounds */ = {
+		D1A1D56527B6BC6A009E1091 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
 				D1336E3127B16C2100E99144 /* scratched_rv6te.wav */,
@@ -113,7 +113,7 @@
 				D1336E3827B16C2100E99144 /* chord_e6jv9.wav */,
 				D1336E3927B16C2100E99144 /* electricity_bp5k6.wav */,
 			);
-			path = Sounds;
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 		D1D3530D27A44A0E00ED6AA1 = {
@@ -145,7 +145,7 @@
 				D1D3534B27A44C6E00ED6AA1 /* Captcha Setup.swift */,
 				D1468F4E27B420EA00377AC2 /* AudioViewController.swift */,
 				D1D3534927A44A2600ED6AA1 /* Extensions.swift */,
-				D1336E3027B16C2100E99144 /* Sounds */,
+				D1A1D56527B6BC6A009E1091 /* Sounds */,
 				D1D3531F27A44A0E00ED6AA1 /* Main.storyboard */,
 				D1D3532227A44A0F00ED6AA1 /* Assets.xcassets */,
 				D1D3532427A44A0F00ED6AA1 /* LaunchScreen.storyboard */,

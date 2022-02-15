@@ -35,6 +35,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        initiateImageViews()
+
     }
     
     
@@ -42,24 +44,34 @@ class ViewController: UIViewController {
     //MARK: viewWillAppear()
     override func viewWillAppear(_ animated: Bool) {
         basicImageArray = [image1, image2, image3, image4]
+        imageArray = []
+        
+        for image in basicImageArray{
+            image.isHidden = false
+        }
         
         var tempID = 0
-        for item in basicImageArray{
-            let newImage = image(imageView: item, id: tempID)
+        for view in basicImageArray{
+            let newImage = image(imageView: view, id: tempID)
             imageArray.append(newImage)
             tempID += 1
         }
-        
-        initiateImageViews()
-        
+                
         refreshCAPTCHA()
         
-        //Audio Setup
-        //https://www.hackingwithswift.com/example-code/media/how-to-play-sounds-using-avaudioplayer
     }// end of viewWillAppear()
     
     
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        for image in basicImageArray{
+            image.isHidden = true
+        }
+        wrongCount = 0
+        chosenCAPTCHA = captcha(code: "", image: nil)
+        previouslyUsedCAPTCHAS = []
+        
+    }//end of viewWillDisappear()
     
     
     //MARK: -refreshCAPTCHA()

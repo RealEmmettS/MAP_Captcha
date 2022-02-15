@@ -8,46 +8,84 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Audio View Controller-->
         <scene sceneID="ONY-WF-EwI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ArU-Kv-BgE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="IQf-ud-RNj" sceneMemberID="viewController">
+                <viewController id="IQf-ud-RNj" customClass="AudioViewController" customModule="Captcha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0jK-N8-wKn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audio CAPTCHA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4N-Wg-cT5">
-                                <rect key="frame" x="42" y="86" width="269.5" height="39.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTK-qh-DBt">
+                                <rect key="frame" x="182" y="337" width="50" height="46.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Tos-ld-3fh"/>
+                                    <constraint firstAttribute="width" constant="50" id="uN7-GI-f6T"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="play.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="button:" destination="IQf-ud-RNj" eventType="touchUpInside" id="5cg-Vf-kfY"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Esw-P9-E1l">
+                                <rect key="frame" x="20" y="431" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audio CAPTCHA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEl-lD-zVn">
+                                <rect key="frame" x="42" y="86" width="270" height="40"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Code: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psB-sn-CpS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Code: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZ3-wj-e8c">
                                 <rect key="frame" x="42" y="133" width="49.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ym-ez-gDz">
+                                <rect key="frame" x="20" y="485" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                <connections>
+                                    <action selector="submitButtonPressed:" destination="IQf-ud-RNj" eventType="touchUpInside" id="f7i-RP-T8P"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="apU-2l-dpw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="v4N-Wg-cT5" firstAttribute="leading" secondItem="apU-2l-dpw" secondAttribute="leading" constant="42" id="Ezk-ws-9Oc"/>
-                            <constraint firstItem="v4N-Wg-cT5" firstAttribute="top" secondItem="apU-2l-dpw" secondAttribute="top" constant="42" id="Y63-RC-kwz"/>
-                            <constraint firstItem="psB-sn-CpS" firstAttribute="top" secondItem="v4N-Wg-cT5" secondAttribute="bottom" constant="7.5" id="iBc-Vr-7KN"/>
-                            <constraint firstItem="psB-sn-CpS" firstAttribute="leading" secondItem="apU-2l-dpw" secondAttribute="leading" constant="42" id="p8A-Zp-JTD"/>
+                            <constraint firstItem="bEl-lD-zVn" firstAttribute="top" secondItem="apU-2l-dpw" secondAttribute="top" constant="42" id="5gm-oj-Ib3"/>
+                            <constraint firstItem="4Ym-ez-gDz" firstAttribute="trailing" secondItem="Esw-P9-E1l" secondAttribute="trailing" id="7g4-AU-CC2"/>
+                            <constraint firstItem="Esw-P9-E1l" firstAttribute="centerX" secondItem="0jK-N8-wKn" secondAttribute="centerX" id="Bf1-c1-Vjk"/>
+                            <constraint firstItem="4Ym-ez-gDz" firstAttribute="leading" secondItem="Esw-P9-E1l" secondAttribute="leading" id="CZE-ML-wRo"/>
+                            <constraint firstItem="Esw-P9-E1l" firstAttribute="top" secondItem="LTK-qh-DBt" secondAttribute="bottom" constant="45.5" id="Hod-fS-Db4"/>
+                            <constraint firstItem="4Ym-ez-gDz" firstAttribute="centerX" secondItem="0jK-N8-wKn" secondAttribute="centerX" id="M7j-hN-uSu"/>
+                            <constraint firstItem="apU-2l-dpw" firstAttribute="trailing" secondItem="Esw-P9-E1l" secondAttribute="trailing" constant="20" id="MhY-BA-s6j"/>
+                            <constraint firstItem="LTK-qh-DBt" firstAttribute="centerX" secondItem="0jK-N8-wKn" secondAttribute="centerX" id="U4i-En-3jA"/>
+                            <constraint firstItem="Esw-P9-E1l" firstAttribute="centerY" secondItem="0jK-N8-wKn" secondAttribute="centerY" id="UdY-1E-t4r"/>
+                            <constraint firstItem="bEl-lD-zVn" firstAttribute="leading" secondItem="apU-2l-dpw" secondAttribute="leading" constant="42" id="jVm-FS-mfz"/>
+                            <constraint firstItem="tZ3-wj-e8c" firstAttribute="top" secondItem="bEl-lD-zVn" secondAttribute="bottom" constant="7" id="l41-nV-ghz"/>
+                            <constraint firstItem="4Ym-ez-gDz" firstAttribute="top" secondItem="Esw-P9-E1l" secondAttribute="bottom" constant="20" id="qAd-ID-Co6"/>
+                            <constraint firstItem="Esw-P9-E1l" firstAttribute="leading" secondItem="apU-2l-dpw" secondAttribute="leading" constant="20" id="ycD-MI-bOz"/>
+                            <constraint firstItem="tZ3-wj-e8c" firstAttribute="leading" secondItem="bEl-lD-zVn" secondAttribute="leading" id="ykC-vz-lze"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="ear" catalog="system" largeContentSizeImage="ear" selectedImage="ear" id="yDP-Lg-8UN"/>
+                    <connections>
+                        <outlet property="submitButton" destination="4Ym-ez-gDz" id="IQO-oP-gaz"/>
+                        <outlet property="userCaptchaField" destination="Esw-P9-E1l" id="Add-uX-IZg"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ArU-Kv-BgE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-610" y="186"/>
+            <point key="canvasLocation" x="-610.14492753623188" y="185.49107142857142"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="vQ0-R6-N7u">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="z92-VG-Wgt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="6JJ-FJ-5S8" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ouw-cm-jAz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -59,6 +97,7 @@
                         <segue destination="IQf-ud-RNj" kind="relationship" relationship="viewControllers" id="WDP-H7-Urq"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z92-VG-Wgt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1509" y="-206"/>
         </scene>
@@ -140,9 +179,8 @@
     </scenes>
     <resources>
         <image name="ear" catalog="system" width="105" height="128"/>
-        <image name="ear" width="16" height="16"/>
-        <image name="eye" width="16" height="16"/>
         <image name="eye" catalog="system" width="128" height="81"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
